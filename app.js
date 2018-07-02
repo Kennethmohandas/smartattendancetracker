@@ -341,8 +341,8 @@ class FacebookBot {
     handleApiAiAction(sender, action, responseMessages, contexts, parameters) {
         switch (action) {
             case "personal-details-for-job-application":
-                let userContact = contexts[0].parameters['user-contact'];
-                let userName = contexts[0].paramters['user-name'];
+                let userContact = contexts[0].parameters['user-phone'];
+                let userName = contexts[0].parameters['user-name'];
                 let userEmail = contexts[0].parameters['user-email'];
                 console.log("User Name is: ",userName);
                 console.log("User Email is: ",userEmail);
